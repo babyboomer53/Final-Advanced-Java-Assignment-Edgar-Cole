@@ -1,20 +1,20 @@
 
-g	java:S128’"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
+m
+java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÅõÄòıÿÿÿÿ
 I
 java:S1481‰"-Remove this unused "argument" local variable.(æÍŠÿÿÿÿÿ
-1
-java:S3626]"Remove this redundant jump.(ÉŠ©ƒ
-a
-java:S1301‘"KReplace this "switch" statement by "if" statements to increase readability.(šÍ¤m
-X
-java:S1854‰"<Remove this useless assignment to local variable "argument".(æÍŠÿÿÿÿÿ
+Ì
+java:S1598"®This file "Lesson7Database.java" should be located in "com\advanced\java\database\com\advanced\java\database" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.database\com\advanced\java\database"(Do not use dots in directory names).(±„¿8ò©ñš‚/
 K
 java:S1481b"0Remove this unused "updateCount" local variable.(õ¢°öÿÿÿÿÿ
 K
 java:S1141\"5Extract this nested try block into a separate method.(ŠÏçó
-m
-java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÅõÄòıÿÿÿÿ
+X
+java:S1854‰"<Remove this useless assignment to local variable "argument".(æÍŠÿÿÿÿÿ
+a
+java:S1301‘"KReplace this "switch" statement by "if" statements to increase readability.(šÍ¤m
 W
 java:S1126;"AReplace this if-then-else statement by a single return statement.(äÉüæ
-Ì
-java:S1598"®This file "Lesson7Database.java" should be located in "com\advanced\java\database\com\advanced\java\database" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.database\com\advanced\java\database"(Do not use dots in directory names).(±„¿8ò©ñš‚/
+1
+java:S3626]"Remove this redundant jump.(ÉŠ©ƒ
+g	java:S128’"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ

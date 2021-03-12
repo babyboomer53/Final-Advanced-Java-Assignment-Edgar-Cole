@@ -1,13 +1,15 @@
 
-P
-java:S1854i":Remove this useless assignment to local variable "option".(Ç¯à˜
-r	java:S127{"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëÝ¯˜ûÿÿÿÿ
-A
-java:S1481e"+Remove this unused "option" local variable.(›˜¯Ã
+r	java:S127x"XRefactor the code in order to not assign to this loop counter from within the loop body.(˜àËöýÿÿÿÿ
 =
 java:S2189P""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
-r	java:S127x"XRefactor the code in order to not assign to this loop counter from within the loop body.(˜àËöýÿÿÿÿ
+Q	java:S125u"<This block of commented-out lines of code should be removed.(±¯€¤
 f	java:S128r"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
+r	java:S127{"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëÝ¯˜ûÿÿÿÿ
 á
 java:S1598"¾This file "Lesson6NetworkingServer.java" should be located in "com\advanced\java\networking\com\advanced\java\networking" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.networking\com\advanced\java\networking"(Do not use dots in directory names).(Ë£¶Ïüÿÿÿÿ8íÝ –‚/
-Q	java:S125u"<This block of commented-out lines of code should be removed.(±¯€¤
+P
+java:S1854i":Remove this useless assignment to local variable "option".(Ç¯à˜
+A
+java:S1481e"+Remove this unused "option" local variable.(›˜¯Ã
+Ž
+java:S1130d"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‚òÝœýÿÿÿÿ8ñìÿ£‚/

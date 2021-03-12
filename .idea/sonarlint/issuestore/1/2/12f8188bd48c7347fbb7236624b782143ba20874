@@ -1,11 +1,11 @@
 
-d
-java:S1192¦"MDefine a constant instead of duplicating this literal "Employee.dat" 6 times.(½àğà
 ƒ
 java:S1130÷"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¹£ş
+P
+java:S4719¤"9Replace charset name argument with StandardCharsets.UTF_8(Şêæâ
+d
+java:S1192¦"MDefine a constant instead of duplicating this literal "Employee.dat" 6 times.(½àğà
 M
 java:S1172Ğ"1Remove this unused method parameter "sampleSize".(‘Ëø“üÿÿÿÿ
 Ñ
 java:S1598"®This file "Lesson1IOStream.java" should be located in "com\advanced\java\iostream\com\advanced\java\iostream" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.iostream\com\advanced\java\iostream"(Do not use dots in directory names).(—Œ¿«ùÿÿÿÿ8Ÿ¶ì•‚/
-P
-java:S4719¤"9Replace charset name argument with StandardCharsets.UTF_8(Şêæâ

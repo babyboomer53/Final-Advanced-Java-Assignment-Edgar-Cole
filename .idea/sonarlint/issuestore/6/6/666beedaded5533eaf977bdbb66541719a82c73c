@@ -1,0 +1,17 @@
+
+J
+java:S2755®"3Disable access to external entities in XML parsing.(ğ¨ºî
+J
+java:S2755"3Disable access to external entities in XML parsing.(¦¢öŒ
+O
+java:S2755œ"3Disable access to external entities in XML parsing.(ÂÿÕ‹ÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àı§„
+ï
+java:S1598"ØThis file "Lesson4XML.java" should be located in "EDU\UCSD\Extension" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.xml\com\advanced\java\xml".(Àı§„
+1
+java:S3626$"Remove this redundant jump.(ûÁİ…
+T
+java:S1854ˆ"8Remove this useless assignment to local variable "root".(„Êï«úÿÿÿÿ
+R	java:S125…"<This block of commented-out lines of code should be removed.(Ì­˜î
+E
+java:S1481ˆ")Remove this unused "root" local variable.(„Êï«úÿÿÿÿ

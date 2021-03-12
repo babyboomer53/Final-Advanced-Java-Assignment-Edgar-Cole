@@ -1,11 +1,7 @@
 
+Q
+java:S1481"4Remove this unused "lesson1IOStream" local variable.(¶ÚÑº8Ì™»£‚/
 å
 java:S1598"ÉThis file "DemoDriver.java" should be located in "com\advanced\java\demo\application\com\advanced\java\demo\application" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.demo.application\com\advanced\java\demo\application"(Do not use dots in directory names).(ô³ºåûÿÿÿÿ
-^
-java:S1854"ARemove this useless assignment to local variable "keyboardInput".(Ë¿Ô8½²Ä›‚/
-O
-java:S1481"2Remove this unused "keyboardInput" local variable.(Ë¿Ô8½²Ä›‚/
 `
-java:S1854"CRemove this useless assignment to local variable "lesson1IOStream".(¶ÚÑº8×’Óœ‚/
-Q
-java:S1481"4Remove this unused "lesson1IOStream" local variable.(¶ÚÑº8×’Óœ‚/
+java:S1854"CRemove this useless assignment to local variable "lesson1IOStream".(¶ÚÑº8Ì™»£‚/

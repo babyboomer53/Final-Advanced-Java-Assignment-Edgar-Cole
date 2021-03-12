@@ -27,3 +27,13 @@ D
 src/src.txt,8\6\865b7825a3f7b747a3170f1022b52f47aa51ac99
 ~
 Nsrc/com.advanced.java.database/com/advanced/java/database/Lesson7Database.java,2\f\2f0dd8d69e01306662cff2cc23fb1ed181f01f2a
+C
+resources/Data5.txt,f\f\ff39d5cfbd8faf23e72de8dbe3a31fbff216dc3e
+u
+Esrc/com.advanced.java.regex/com/advanced/java/regex/Lesson2RegEx.java,8\7\87c4973098002f1688b0205def561fb4ecd97760
+o
+?src/com.advanced.java.xml/com/advanced/java/xml/Lesson4XML.java,6\6\666beedaded5533eaf977bdbb66541719a82c73c
+_
+/.idea/libraries/mysql_connector_java_8_0_23.xml,9\5\95ea966f011ce81fd07075ab7f4eb676d64ef137
+p
+@out/production/Final-Advanced-Java-Assignment-Edgar-Cole/src.txt,4\6\466a5676c77eeed5590207991a88acf7bac9c21c
