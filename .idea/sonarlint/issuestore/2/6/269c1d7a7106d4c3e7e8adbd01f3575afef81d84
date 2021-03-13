@@ -1,21 +1,23 @@
 
-E
-java:S5869H"*Remove duplicates in this character class.(ö¸Èãûÿÿÿÿ
-m
-java:S3776C"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‚òİœıÿÿÿÿ
-E
-java:S5869H"*Remove duplicates in this character class.(ö¸Èãûÿÿÿÿ
-m	java:S127Z"XRefactor the code in order to not assign to this loop counter from within the loop body.(êïÜ­
-l	java:S127b"XRefactor the code in order to not assign to this loop counter from within the loop body.(ş¯ß7
-g
-java:S5998H"LRefactor this repetition that can lead to a stack overflow for large inputs.(ö¸Èãûÿÿÿÿ
-A
-java:S1481D"+Remove this unused "option" local variable.(›˜¯Ã
-r	java:S127i"XRefactor the code in order to not assign to this loop counter from within the loop body.(˜àËöıÿÿÿÿ
-f	java:S128S"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
+]	java:S125<"<This block of commented-out lines of code should be removed.(ë§ç¶ûÿÿÿÿ8¢ş­É‚/
 á
-java:S1598"¾This file "Lesson6NetworkingClient.java" should be located in "com\advanced\java\networking\com\advanced\java\networking" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.networking\com\advanced\java\networking"(Do not use dots in directory names).(Ë£¶Ïüÿÿÿÿ8“œ–‚/
+java:S1598"¾This file "Lesson6NetworkingClient.java" should be located in "com\advanced\java\networking\com\advanced\java\networking" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.networking\com\advanced\java\networking"(Do not use dots in directory names).(Ë£¶Ïüÿÿÿÿ8º”—º‚/
 P
-java:S1854J":Remove this useless assignment to local variable "option".(Ç¯à˜
-r	java:S127l"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëİ¯˜ûÿÿÿÿ
-Q	java:S125V"<This block of commented-out lines of code should be removed.(±¯€¤
+java:S1854Q":Remove this useless assignment to local variable "option".(Ç¯à˜
+l	java:S127i"XRefactor the code in order to not assign to this loop counter from within the loop body.(ş¯ß7
+g
+java:S5998O"LRefactor this repetition that can lead to a stack overflow for large inputs.(ö¸Èãûÿÿÿÿ
+A
+java:S1481K"+Remove this unused "option" local variable.(›˜¯Ã
+J	java:S108:")Either remove or fill this block of code.(ü§è½ùÿÿÿÿ8¯µªÉ‚/
+r	java:S127p"XRefactor the code in order to not assign to this loop counter from within the loop body.(˜àËöıÿÿÿÿ
+f	java:S128Z"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
+Q	java:S125]"<This block of commented-out lines of code should be removed.(±¯€¤
+E
+java:S5869O"*Remove duplicates in this character class.(ö¸Èãûÿÿÿÿ
+E
+java:S5869O"*Remove duplicates in this character class.(ö¸Èãûÿÿÿÿ
+m
+java:S3776J"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‚òİœıÿÿÿÿ
+m	java:S127a"XRefactor the code in order to not assign to this loop counter from within the loop body.(êïÜ­
+r	java:S127s"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëİ¯˜ûÿÿÿÿ

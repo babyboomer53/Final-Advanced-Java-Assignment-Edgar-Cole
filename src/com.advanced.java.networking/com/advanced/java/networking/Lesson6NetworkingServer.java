@@ -1,6 +1,7 @@
 package com.advanced.java.networking.com.advanced.java.networking;
 
 import java.io.*;
+import java.net.BindException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
@@ -43,7 +44,7 @@ class ThreadedEchoHandler implements Runnable {
     }
 }
 
-public class Lesson6NetworkingServer {
+public class Lesson6NetworkingServer implements Runnable {
 
     private int port;
 
@@ -72,11 +73,10 @@ public class Lesson6NetworkingServer {
                 "# Listen for connections on port <number>");
     }
 
-    public void startServer() {
-
+    // public void startServer() {
+    public void run() {
         try (var serverSocket = new ServerSocket(port)) {
             int index = 1;
-
             while (true) {
                 Socket incoming = serverSocket.accept();
                 System.out.println("Spawning " + index);
@@ -138,7 +138,8 @@ public class Lesson6NetworkingServer {
         } else {
             Lesson6NetworkingServer lesson6NetworkingServer = new Lesson6NetworkingServer(port);
             System.out.println(lesson6NetworkingServer);
-            lesson6NetworkingServer.startServer();
+            lesson6NetworkingServer.run();
+            // lesson6NetworkingServer.startServer();
         }
     }
 

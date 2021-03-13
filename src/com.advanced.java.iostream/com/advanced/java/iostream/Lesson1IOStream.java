@@ -185,7 +185,7 @@ public class Lesson1IOStream {
     /**
      * @param filename
      */
-    private static void readBinaryStream(String filename) {
+    public static void readBinaryStream(String filename) {
         try (var in = new ObjectInputStream(new FileInputStream(filename))) {
             // retrieve all records into a new array
             var newStaff = (Employee[]) in.readObject();
@@ -205,10 +205,10 @@ public class Lesson1IOStream {
      * @param filename
      * @param sampleSize
      */
-    private static void writeBinaryStream(String filename, int sampleSize) {
+    public static void writeBinaryStream(String filename, int sampleSize) {
         // save all employee records to the file Employee.dat
         try (var out = new ObjectOutputStream(new FileOutputStream(filename))) {
-            out.writeObject(generateData(10_000));
+            out.writeObject(generateData(sampleSize));
         } catch (FileNotFoundException fileNotFoundException) {
             fileNotFoundException.printStackTrace();
         } catch (IOException ioException) {
@@ -288,7 +288,7 @@ public class Lesson1IOStream {
         return employees;
     }
 
-    private static void readTextStream(String filename) {
+    public static void readTextStream(String filename) {
         try (var in = new Scanner(new FileInputStream(filename), "UTF-8")) {
             Employee[] newStaff = readData(in);
             // print the newly read employee records
@@ -305,7 +305,7 @@ public class Lesson1IOStream {
      * @param sampleSize
      * @throws IOException
      */
-    private static void writeTextStream(String filename, int sampleSize) throws IOException {
+    public static void writeTextStream(String filename, int sampleSize) throws IOException {
         // save all employee records to the file Employee.dat
         try (var out = new PrintWriter(filename, StandardCharsets.UTF_8)) {
             writeData(generateData(sampleSize), out);
@@ -315,7 +315,7 @@ public class Lesson1IOStream {
     /**
      * @param filename
      */
-    private static void readObjectStream(String filename) {
+    public static void readObjectStream(String filename) {
         try (var in = new ObjectInputStream(new FileInputStream(filename))) {
             // retrieve all records into a new array
             var staff = (Employee[]) in.readObject();
@@ -330,7 +330,7 @@ public class Lesson1IOStream {
         }
     }
 
-    private static void writeObjectStream(String filename, int sampleSize) {
+    public static void writeObjectStream(String filename, int sampleSize) {
         // save all employee records to the file Employee.dat
         try (var out = new ObjectOutputStream(new FileOutputStream(filename))) {
             out.writeObject(generateData(sampleSize));

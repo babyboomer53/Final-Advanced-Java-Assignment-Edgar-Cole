@@ -47,12 +47,15 @@ public class Lesson6NetworkingClient {
     }
 
     public void runSocketTest() throws IOException {
+        Scanner scanner = new Scanner(System.in);
         try (var socket = new Socket(url, port);
              var in = new Scanner(socket.getInputStream(), StandardCharsets.UTF_8)) {
             while (in.hasNextLine()) {
                 String line = in.nextLine();
                 System.out.println(line);
             }
+        // } catch (InterruptedException interruptedException) {
+        //     interruptedException.printStackTrace();
         }
     }
 

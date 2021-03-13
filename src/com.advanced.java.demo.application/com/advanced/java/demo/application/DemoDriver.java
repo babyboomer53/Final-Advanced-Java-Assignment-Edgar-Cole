@@ -3,6 +3,8 @@ package com.advanced.java.demo.application.com.advanced.java.demo.application;
 import com.advanced.java.concurrency.com.advanced.java.concurrency.Lesson5Concurrent;
 import com.advanced.java.database.com.advanced.java.database.Lesson7Database;
 import com.advanced.java.iostream.com.advanced.java.iostream.Lesson1IOStream;
+import com.advanced.java.networking.com.advanced.java.networking.Lesson6NetworkingClient;
+import com.advanced.java.networking.com.advanced.java.networking.Lesson6NetworkingServer;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -13,12 +15,12 @@ public class DemoDriver {
     public static void runConcurrencyDemo() throws InterruptedException {
 
         Scanner userInput = new Scanner(System.in);
-        int numberOfThreads = 3;
+        int numberOfThreads = 8;
         Lesson5Concurrent.MODE mode = Lesson5Concurrent.MODE.NOLOCKING;
         int choice = 0;
         do {
             System.out.print("\nC O N C U R R E N T   P R O C E S S I N G   D E M O\n");
-            System.out.print("Enter the number of concurrent threads to run, or 0 to exit: ");
+            System.out.print("Enter the number of concurrent threads to run, or 0 to return to the main menu: ");
             numberOfThreads = Integer.parseInt(userInput.next());
             if (numberOfThreads == 0) continue; // Jump to the while condition…
             System.out.println("\n1) Reentrant\n" +
@@ -47,65 +49,137 @@ public class DemoDriver {
     }
 
     public static void runDatabaseDemo() throws SQLException, IOException {
+        Scanner scanner = new Scanner(System.in);
         System.out.print("\nD A T A B A S E   D E M O   W I T H   J D B C   A N D   M y S Q L\n");
         Lesson7Database lesson7Database = new Lesson7Database("resources/Lessons.sql");
         lesson7Database.connectToTheDatabase();
         lesson7Database.populateTheTable();
         lesson7Database.dumpTheDatabase();
+        System.out.print("\nPress ENTER to return to the main menu: ");
+        while (!scanner.hasNextLine()) {
+            // Do nothing…
+        }
     }
 
-    public static void runIOStreamDemo() {
-        System.out.print("\nI / O   S T R E A M   D E M O\n");
-        Lesson1IOStream lesson1IOStream = new Lesson1IOStream();
-        System.out.println("Not yet ready for prime time.");
+    public static void runIOStreamDemo() throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        var filename = "resources/Employee.dat";
+        int method = 0;
+        int sampleSize = 10_000;
+        do {
+            System.out.print("\nI / O   S T R E A M   D E M O\n");
+            System.out.println("\nSELECT AN I/O METHOD…\n");
+            System.out.println("1) Object stream\n" +
+                    "2) Binary stream\n" +
+                    "3) Text stream\n");
+            System.out.print("Enter the number of the I/O method to use, or 0 to return to the main menu: ");
+            method = Integer.parseInt(scanner.next());
+            if (method == 0) continue;
+            System.out.println();
+            // Lesson1IOStream lesson1IOStream = new Lesson1IOStream();
+            switch (method) {
+                case 1:
+                    Lesson1IOStream.writeObjectStream(filename, sampleSize);
+                    Lesson1IOStream.readObjectStream(filename);
+                    break;
+                case 2:
+                    Lesson1IOStream.writeBinaryStream(filename, sampleSize);
+                    Lesson1IOStream.readBinaryStream(filename);
+                    break;
+                case 3:
+                    Lesson1IOStream.writeTextStream(filename, sampleSize);
+                    Lesson1IOStream.readTextStream(filename);
+                    break;
+                default:
+                    method = 0;
+                    break;
+            }
+        } while (method >= 1);
     }
 
-    public static void runNetworkingDemo(){
+    public static void runNetworkingDemo() throws IOException {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("\nN E T W O R K I N G   D E M O\n");
-        System.out.println("Not yet ready for prime time.");
+        Runnable runnable = new Lesson6NetworkingServer(1953);
+        var thread = new Thread(runnable);
+        thread.start();
+        Lesson6NetworkingClient lesson6NetworkingClient = new Lesson6NetworkingClient("127.0.0.1", 1953);
+        lesson6NetworkingClient.runSocketTest();
+        thread.interrupt();
+        System.out.print("\nPress ENTER to return to the main menu: ");
+        while (!scanner.hasNextLine()) {
+            // Do nothing…
+        }
     }
 
-    public static void runRegularExpressionsDemo(){
+    public static void runRegularExpressionsDemo() {
+        Scanner scanner = new Scanner(System.in);
         System.out.print("\nR E G U L A R   E X P R E S S I O N S   D E M O\n");
+        System.out.print("\nPress ENTER to return to the main menu: ");
+        while (!scanner.hasNextLine()) {
+            // Do nothing…
+        }
+    }
+
+    public static void runXMLDemo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("\nX M L   D E M O\n");
+        System.out.print("\nPress ENTER to return to the main menu: ");
+        while (!scanner.hasNextLine()) {
+            // Do nothing…
+        }
+    }
+
+    public static void runStreamsDemo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("S T R E A M S   D E M O");
+        System.out.print("\nPress ENTER to return to the main menu: ");
+        while (!scanner.hasNextLine()) {
+            // Do nothing…
+        }
     }
 
     public static void main(String[] arguments) throws InterruptedException, IOException, SQLException {
         Scanner keyboardInput = new Scanner(System.in);
-
-        int choice = 0;
+        int demo = 0;
+        System.out.print("\nW E L C O M E   TO   T H E   D E M O   D R I V E R !\n");
         do {
-            System.out.print("\nW E L C O M E   TO   T H E   D E M O   D R I V E R !\n");
             System.out.println("\nSELECT A DEMO…\n");
-            System.out.println("1) Concurrency demo\n" +
-                    "2) Database demo\n" +
-                    "3) I/O Stream demo\n" +
-                    "4) Networking demo\n" +
-                    "5) Regular expressions demo\n" +
-                    "6) Streams\n" +
-                    "7) XML demo");
+            System.out.println("1) I/O Stream demo\n" +
+                    "2) Regular Expressions demo\n" +
+                    "3) Streams demo\n" +
+                    "4) XML demo\n" +
+                    "5) Concurrency demo\n" +
+                    "6) Networking demo\n" +
+                    "7) Database demo");
             System.out.print("\nEnter the number of the demo to run, or 0 to exit: ");
-            choice = Integer.parseInt(keyboardInput.next());
-            switch (choice) {
+            demo = Integer.parseInt(keyboardInput.next());
+            switch (demo) {
                 case 1:
-                    runConcurrencyDemo();
-                    break;
-                case 2:
-                    runDatabaseDemo();
-                    break;
-                case 3:
                     runIOStreamDemo();
                     break;
-                case 4:
-                    runNetworkingDemo();
-                    break;
-                case 5:
+                case 2:
                     runRegularExpressionsDemo();
                     break;
+                case 3:
+                    runStreamsDemo();
+                    break;
+                case 4:
+                    runXMLDemo();
+                    break;
+                case 5:
+                    runConcurrencyDemo();
+                    break;
+                case 6:
+                    runNetworkingDemo();
+                    break;
+                case 7:
+                    runDatabaseDemo();
+                    break;
                 default:
-                    choice = 0;
+                    demo = 0;
                     break;
             }
-        } while (choice != 0);
+        } while (demo != 0);
     }
 }
-
