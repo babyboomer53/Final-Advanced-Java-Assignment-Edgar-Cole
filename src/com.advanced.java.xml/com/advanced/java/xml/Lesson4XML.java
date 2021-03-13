@@ -1,4 +1,4 @@
-package EDU.UCSD.Extension;
+package com.advanced.java.xml.com.advanced.java.xml;
 
 import org.w3c.dom.*;
 import org.xml.sax.Attributes;

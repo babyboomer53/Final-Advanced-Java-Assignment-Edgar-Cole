@@ -5,7 +5,12 @@ import com.advanced.java.database.com.advanced.java.database.Lesson7Database;
 import com.advanced.java.iostream.com.advanced.java.iostream.Lesson1IOStream;
 import com.advanced.java.networking.com.advanced.java.networking.Lesson6NetworkingClient;
 import com.advanced.java.networking.com.advanced.java.networking.Lesson6NetworkingServer;
+import com.advanced.java.streams.com.advanced.java.streams.Lesson3Streams;
+import com.advanced.java.xml.com.advanced.java.xml.Lesson4XML;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Scanner;
@@ -76,7 +81,6 @@ public class DemoDriver {
             method = Integer.parseInt(scanner.next());
             if (method == 0) continue;
             System.out.println();
-            // Lesson1IOStream lesson1IOStream = new Lesson1IOStream();
             switch (method) {
                 case 1:
                     Lesson1IOStream.writeObjectStream(filename, sampleSize);
@@ -121,25 +125,56 @@ public class DemoDriver {
         }
     }
 
-    public static void runXMLDemo() {
+    public static void runXMLDemo() throws IOException, SAXException, ParserConfigurationException, XPathExpressionException {
         Scanner scanner = new Scanner(System.in);
+        int parser = 0;
         System.out.print("\nX M L   D E M O\n");
-        System.out.print("\nPress ENTER to return to the main menu: ");
-        while (!scanner.hasNextLine()) {
-            // Do nothing…
-        }
-    }
+        do {
+            System.out.println("\nSELECT A PARSER…\n");
+            System.out.println("1) DOM parser\n" +
+                    "2) SAX parser\n" +
+                    "3) XPATH\n");
+            System.out.print("Enter the number of the parser to use, or 0 to return to the main menu: ");
+            parser = Integer.parseInt(scanner.next());
+            if (parser == 0) continue;
+            System.out.println();
+            Lesson4XML lesson4XML = new Lesson4XML("resources/JobResult_UCSDExt.xml");
+            switch (parser) {
+                case 1:
+                    System.out.println("\nResults of XML parsing using DOM parser:");
+                    lesson4XML.useDOMtoParseXMLFile();
+                    break;
+                case 2:
+                    System.out.println("Results of XML parsing using SAX parser:");
+                    lesson4XML.useSAXtoParseXMLFile();
+                    break;
+                case 3:
+                    System.out.println("Results of XML parsing using XPATH:");
+                    lesson4XML.useXPATHtoParseXMLFile();
+                    break;
+                default:
+                    parser = 0;
+                    break;
+            }
+        } while (parser >= 1);
+     }
 
-    public static void runStreamsDemo() {
+    public static void runStreamsDemo() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("S T R E A M S   D E M O");
-        System.out.print("\nPress ENTER to return to the main menu: ");
-        while (!scanner.hasNextLine()) {
-            // Do nothing…
+        System.out.print("\nS T R E A M S   D E M O\n");
+        String[] fileName;
+        fileName =new String[1];
+        fileName[0] = "resources/JobResult_124432.txt";
+        String regex = "[0]{8}[0-9a-f]{8}";
+        Lesson3Streams lesson3Streams = new Lesson3Streams(fileName[0], regex);
+        lesson3Streams.main(fileName);
+        System.out.print("\nPress ENTER to return to the main menu…");
+        while (!scanner.hasNextLine()){
+            // Wait…
         }
     }
 
-    public static void main(String[] arguments) throws InterruptedException, IOException, SQLException {
+    public static void main(String[] arguments) throws InterruptedException, IOException, SQLException, XPathExpressionException, SAXException, ParserConfigurationException {
         Scanner keyboardInput = new Scanner(System.in);
         int demo = 0;
         System.out.print("\nW E L C O M E   TO   T H E   D E M O   D R I V E R !\n");
