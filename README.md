@@ -46,7 +46,7 @@ For more information about how the program behind the I/O Stream demonstration w
 
 The DemoDriver program's menu system should be self-explanatory. However, there wasn't sufficient testing performed 
 to claim that it is bulletproof. Specifically, keyboard interactions can be a little finicky. The Scanner class can 
-be a little difficulty to work with when processing keyboard input. Most of the time, however, the program is well-behaved. Under most circumstances I found that simply pressing ENTER again solved the problem.
+be a little difficult to work with when processing keyboard input. Most of the time, however, the program is well-behaved. Under most circumstances I found that simply pressing ENTER again solved the problem.
 
 ## A Few Caveats
 
