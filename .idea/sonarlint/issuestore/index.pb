@@ -47,3 +47,5 @@ D
 resources/Lesson6.md,4\6\4601dee4cf1915009ffc11ad24393c7c067d6543
 D
 resources/Lesson7.md,4\5\454b0a44dd69146e3199d566ec2f14a7246ad52a
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

@@ -1,10 +1,5 @@
 
-S
-java:S2209®"5Change this instance-reference to a static reference.(¢àú×8¬ÝŽè‚/
-`
-java:S1854"CRemove this useless assignment to local variable "numberOfThreads".(Ú¢º¼8‹œüã‚/
-W
-java:S2209}"5Change this instance-reference to a static reference.(£º×ñþÿÿÿÿ8é²¸é‚/
+X	java:S125|"<This block of commented-out lines of code should be removed.(©›¬•8ºŒŒõ‚/
 Œ
 java:S1192@"jDefine a constant instead of duplicating this literal "
 Press ENTER to return to the main menu: " 3 times.(í†Ø†øÿÿÿÿ8‹œüã‚/
@@ -12,3 +7,5 @@ V
 java:S18540":Remove this useless assignment to local variable "choice".(ÛÝåo8‹œüã‚/
 å
 java:S1598"ÉThis file "DemoDriver.java" should be located in "com\advanced\java\demo\application\com\advanced\java\demo\application" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.demo.application\com\advanced\java\demo\application"(Do not use dots in directory names).(ô³ºåûÿÿÿÿ
+`
+java:S1854"CRemove this useless assignment to local variable "numberOfThreads".(Ú¢º¼8‹œüã‚/

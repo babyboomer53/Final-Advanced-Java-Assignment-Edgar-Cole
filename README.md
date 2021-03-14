@@ -86,7 +86,7 @@ Then, when I run the Database demo again, I get the nine rows I'm expecting:
 
 ![Database Dilemma4c](resources/DatabaseDemo4.png)
 
-For more information about how the program behind the Database demonstration works, go here.
+For more information about how the program behind the Database demonstration works, go [here](resources/Lesson7.md).    
 
 For more information about how the program behind the XML demonstration works, go [here](resources/Lesson4.md).
 
