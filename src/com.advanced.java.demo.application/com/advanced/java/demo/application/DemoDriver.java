@@ -26,9 +26,9 @@ public class DemoDriver {
         int choice = 0;
         do {
             System.out.print("\nC O N C U R R E N T   P R O C E S S I N G   D E M O\n");
-            System.out.print("\n5Enter the number of concurrent threads to run, or 0 to return to the main menu: ");
+            System.out.print("\nEnter the number of concurrent threads to run, or 0 to return to the main menu: ");
             numberOfThreads = Integer.parseInt(userInput.next());
-            if (numberOfThreads == 0) continue; // Jump to the while condition…
+            if (numberOfThreads == 0) continue; // Jump to the loop condition…
             System.out.println("\n1) Reentrant\n" +
                     "2) Atomic\n" +
                     "3) No locking\n");
@@ -121,8 +121,8 @@ public class DemoDriver {
         Scanner scanner = new Scanner(System.in);
         String[] filename = {"resources/neighbor-dump.txt"};
         System.out.print("\nR E G U L A R   E X P R E S S I O N S   D E M O\n");
-        Lesson2RegEx lesson2RegEx = new Lesson2RegEx();
-        lesson2RegEx.main(filename);
+        //Lesson2RegEx lesson2RegEx = new Lesson2RegEx();
+        Lesson2RegEx.main(filename);
         System.out.print("\nPress ENTER to return to the main menu: ");
         while (!scanner.hasNextLine()) {
             // Wait…
@@ -166,12 +166,9 @@ public class DemoDriver {
     public static void runStreamsDemo() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("\nS T R E A M S   D E M O\n");
-        String[] fileName;
-        fileName = new String[1];
+        String[] fileName = new String[1];
         fileName[0] = "resources/JobResult_124432.txt";
-        String regex = "[0]{8}[0-9a-f]{8}";
-        Lesson3Streams lesson3Streams = new Lesson3Streams(fileName[0], regex);
-        lesson3Streams.main(fileName);
+        Lesson3Streams.main(fileName);
         System.out.print("\nPress ENTER to return to the main menu…");
         while (!scanner.hasNextLine()) {
             // Wait…

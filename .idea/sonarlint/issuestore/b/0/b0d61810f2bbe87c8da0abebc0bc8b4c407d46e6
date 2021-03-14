@@ -1,19 +1,19 @@
 
-U
-java:S1128"3Remove this unused import 'java.net.BindException'.(õÛÈûÿÿÿÿ8Ëˆ€Ë‚/
-X	java:S125u"<This block of commented-out lines of code should be removed.(±¯€¤8Æì›º‚/
+y	java:S127x"XRefactor the code in order to not assign to this loop counter from within the loop body.(˜àËöıÿÿÿÿ8Æì›º‚/
+m	java:S128r"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ8Æì›º‚/
 A
 java:S1481e"+Remove this unused "option" local variable.(›˜¯Ã
-P
-java:S1854i":Remove this useless assignment to local variable "option".(Ç¯à˜
 ]	java:S125L"<This block of commented-out lines of code should be removed.(ªŞ†ºúÿÿÿÿ8¬ğéÇ‚/
+X	java:S125u"<This block of commented-out lines of code should be removed.(±¯€¤8Æì›º‚/
+U
+java:S1128"3Remove this unused import 'java.net.BindException'.(õÛÈûÿÿÿÿ8Ëˆ€Ë‚/
 =
 java:S2189P""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
-á
-java:S1598"¾This file "Lesson6NetworkingServer.java" should be located in "com\advanced\java\networking\com\advanced\java\networking" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.networking\com\advanced\java\networking"(Do not use dots in directory names).(Ë£¶Ïüÿÿÿÿ8Ïş”º‚/
-m	java:S128r"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ8Æì›º‚/
-y	java:S127x"XRefactor the code in order to not assign to this loop counter from within the loop body.(˜àËöıÿÿÿÿ8Æì›º‚/
+y	java:S127{"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëİ¯˜ûÿÿÿÿ8Æì›º‚/
+P
+java:S1854i":Remove this useless assignment to local variable "option".(Ç¯à˜
 
 java:S1130d"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‚òİœıÿÿÿÿ8ÄòÇ‚/
-y	java:S127{"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëİ¯˜ûÿÿÿÿ8Æì›º‚/
 ^	java:S125"<This block of commented-out lines of code should be removed.(ĞÂÚúÿÿÿÿ8î€ñÇ‚/
+á
+java:S1598"¾This file "Lesson6NetworkingServer.java" should be located in "com\advanced\java\networking\com\advanced\java\networking" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.networking\com\advanced\java\networking"(Do not use dots in directory names).(Ë£¶Ïüÿÿÿÿ8Ïş”º‚/

@@ -1,0 +1,9 @@
+
+Ç
+java:S1598"©This file "Lesson3Streams.java" should be located in "com\advanced\java\streams\com\advanced\java\streams" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.streams\com\advanced\java\streams"(Do not use dots in directory names).(îòä½8ëú«æ‚/
+W
+java:S1854«";Remove this useless assignment to local variable "endTime".(†›¢Êüÿÿÿÿ
+‡
+java:S1130o"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Çª‡úýÿÿÿÿ
+T
+java:S1854©"=Remove this useless assignment to local variable "startTime".(§µ¤«
