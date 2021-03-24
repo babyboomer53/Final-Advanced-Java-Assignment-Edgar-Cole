@@ -5,9 +5,13 @@ Southern California San Diego's Extension. During this final class, a new topic 
 nine weeks. Each week included a programming assignment, which gave us an opportunity to put 
 new concepts into practice and hone our skills.
 
-The purpose of this final project is to present a compendium of the programming assignments completed during this quarter. As such, I've created an interactive menu from which several of the programs I wrote during the class can be selected and run.
+The purpose of this final project is to present a compendium of the programming assignments completed during this quarter.
+As such, I've created an interactive menu from which several of the programs I wrote during the class can be selected and run.
 
-Some menu selections are non-interactive (i.e.,  run and done), while other menu selections are more dynamic; giving the user an opportunity to select parameters from a submenu prior to execution. Those programs accepting parameters can be rerun multiple times, with different parameters each time. Those programs not accepting parameters can be rerun multiple times as well, but typically they must be rerun from the main menu.
+Some menu selections are non-interactive (i.e.,  run and done), while other menu selections are more dynamic; giving the
+user an opportunity to select parameters from a submenu prior to execution. Those programs accepting parameters can be
+rerun multiple times, with different parameters each time. Those programs not accepting parameters can be rerun multiple
+times as well, but typically they must be rerun from the main menu.
 
 When started, the DemoDriver program presents a menu from which the user may select a program to run:
 
@@ -46,26 +50,32 @@ For more information about how the program behind the I/O Stream demonstration w
 
 The DemoDriver program's menu system should be self-explanatory. However, there wasn't sufficient testing performed 
 to claim that it is bulletproof. Specifically, keyboard interactions can be a little finicky. The Scanner class can 
-be a little difficult to work with when processing keyboard input. Most of the time, however, the program is well-behaved. Under most circumstances I found that simply pressing ENTER again solved the problem.
+be a little difficult to work with when processing keyboard input. Most of the time, however, the program is well-behaved.
+Under most circumstances I found that simply pressing ENTER again solved the problem.
 
 ## A Few Caveats
 
-When running the Networking demonstration, the program makes no provisions for ensuring that the connection gets closed. Consequently, if the Networking demonstration is run multiple times during the same session, the following error will be generated:
+When running the Networking demonstration, the program makes no provisions for ensuring that the connection gets closed.
+Consequently, if the Networking demonstration is run multiple times during the same session, the following error will be
+generated:
 
 ![Bind Exception](resources/BindException.png)
 
 This occurs because the server wasn't shut down upon termination of the previous run. It's still running in the background. 
 Consequently, it's still holding on to the port. The other side effect of this anomaly is that, although other menu 
-items continue functioning normally, you will not be able to exit the program. Currently, the only solution is to restart DemoDriver. For more information about the programs behind the Networking demonstration, go [here](resources/Lesson7.md).
+items continue functioning normally, you will not be able to exit the program. Currently, the only solution is to restart
+DemoDriver. For more information about the programs behind the Networking demonstration, go [here](resources/Lesson7.md).
 
-For the database demonstration, I used the MySQL server. When invoked, the database demonstration establishes a connection to the MySQL server, where it creates a database named corejava in which it creates a schema named Lessons. Thereafter, it populates the Lessons table with nine rows of data:
+For the database demonstration, I used the MySQL server. When invoked, the database demonstration establishes a connection
+to the MySQL server, where it creates a database named corejava in which it creates a schema named Lessons. Thereafter, it
+populates the Lessons table with nine rows of data:
 
 ![Database Dilemma1a](resources/DatabaseDemo1.png)
 
 ![Database Dilemma1b](resources/Workbench1.png)
 
 So far so good. The problem is that I never figured out how to prevent the server from allowing duplicate rows. 
-Consequently, every time the database demo runs, it adds nine more rows the table:
+Consequently, every time the database demo runs, it adds nine more rows to the table:
 
 ![Database Dilemma2a](resources/DatabaseDemo2.png)
 

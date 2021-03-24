@@ -1,6 +1,6 @@
 
-Â
-java:S1598"ŸThis file "Lesson2RegEx.java" should be located in "com\advanced\java\regex\com\advanced\java\regex" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.regex\com\advanced\java\regex"(Do not use dots in directory names).(‰¨ÊÄÿÿÿÿÿ8¡®Ëè‚/
-i	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èä¶øþÿÿÿÿ
-b	java:S100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÂœ?
 d	java:S100”"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¬¡ž
+Â
+java:S1598"ŸThis file "Lesson2RegEx.java" should be located in "com\advanced\java\regex\com\advanced\java\regex" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.regex\com\advanced\java\regex"(Do not use dots in directory names).(‰¨ÊÄÿÿÿÿÿ8¹÷Ö«…/
+b	java:S100~"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÂœ?
+i	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èä¶øþÿÿÿÿ
