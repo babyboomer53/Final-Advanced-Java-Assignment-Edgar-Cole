@@ -21,7 +21,7 @@ public class DemoDriver {
     public static void runConcurrencyDemo() throws InterruptedException {
 
         Scanner userInput = new Scanner(System.in);
-        int numberOfThreads = 8;
+        int numberOfThreads;
         Lesson5Concurrent.MODE mode = Lesson5Concurrent.MODE.NOLOCKING;
         int choice = 0;
         do {

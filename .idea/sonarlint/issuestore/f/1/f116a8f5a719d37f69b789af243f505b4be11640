@@ -1,41 +1,41 @@
 
-A
-java:S1481="&Remove this unused "l" local variable.(æçîÇþÿÿÿÿ
-Q
-java:S1854í":Remove this useless assignment to local variable "option".(Ç¯à˜
-ß
-java:S1598"¼This file "Lesson5Concurrent.java" should be located in "com\advanced\java\concurrency\com\advanced\java\concurrency" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.concurrency\com\advanced\java\concurrency"(Do not use dots in directory names).(áš›Øúÿÿÿÿ8äöâ—‚/
-R	java:S125ù"<This block of commented-out lines of code should be removed.(±¯€¤
-c
-java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(øµÏ
-n	java:S127ü"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÂîÎâ
+B
+java:S1481é"+Remove this unused "option" local variable.(›˜¯Ã
+G
+java:S1444Ò"+Make this "public static count" field final(Ã‘Ñ€ùÿÿÿÿ
 m
 java:S1104Ò"QMake count a static final constant or non-public and provide accessors if needed.(Ã‘Ñ€ùÿÿÿÿ
 P
 java:S1854="5Remove this useless assignment to local variable "l".(æçîÇþÿÿÿÿ
-g	java:S128ö"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
+R	java:S125ù"<This block of commented-out lines of code should be removed.(±¯€¤
+Q
+java:S1854í":Remove this useless assignment to local variable "option".(Ç¯à˜
+A
+java:S1481="&Remove this unused "l" local variable.(æçîÇþÿÿÿÿ
+W	java:S125Ò"<This block of commented-out lines of code should be removed.(žÇö üÿÿÿÿ
 a
 java:S2142}"FEither re-interrupt this method or rethrow the "InterruptedException".(º”µ–ýÿÿÿÿ
-W	java:S125Ò"<This block of commented-out lines of code should be removed.(žÇö üÿÿÿÿ
-B
-java:S1481é"+Remove this unused "option" local variable.(›˜¯Ã
-W	java:S125Ä"<This block of commented-out lines of code should be removed.(žÇö üÿÿÿÿ
+g	java:S128ö"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
 W	java:S125¶"<This block of commented-out lines of code should be removed.(žÇö üÿÿÿÿ
+G
+java:S1444Ó"0Make this "public static atomicLong" field final(ú­³
+g
+java:S1192;"QDefine a constant instead of duplicating this literal "%s startingâ€¦%n" 3 times.(÷™à
+n	java:S127ü"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÂîÎâ
+~
+java:S1192·"bDefine a constant instead of duplicating this literal "
+The combined character count is " 3 times.(×Õåžùÿÿÿÿ
+s	java:S127€"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëÝ¯˜ûÿÿÿÿ
+D
+java:S1481#".Remove this unused "character" local variable.(û§é¼
+W	java:S125Ä"<This block of commented-out lines of code should be removed.(žÇö üÿÿÿÿ
+ß
+java:S1598"¼This file "Lesson5Concurrent.java" should be located in "com\advanced\java\concurrency\com\advanced\java\concurrency" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.concurrency\com\advanced\java\concurrency"(Do not use dots in directory names).(áš›Øúÿÿÿÿ8äöâ—‚/
 S
 java:S1854#"=Remove this useless assignment to local variable "character".(û§é¼
 p
 java:S2786Õ"RRemove this redundant "static" qualifier; nested enum types are implicitly static.(ä·“ã8ñ­ú—‚/
-s	java:S127€"XRefactor the code in order to not assign to this loop counter from within the loop body.(ëÝ¯˜ûÿÿÿÿ
-G
-java:S1444Ò"+Make this "public static count" field final(Ã‘Ñ€ùÿÿÿÿ
-g
-java:S1192;"QDefine a constant instead of duplicating this literal "%s startingâ€¦%n" 3 times.(÷™à
 m
 java:S1104Ó"VMake atomicLong a static final constant or non-public and provide accessors if needed.(ú­³
-~
-java:S1192·"bDefine a constant instead of duplicating this literal "
-The combined character count is " 3 times.(×Õåžùÿÿÿÿ
-D
-java:S1481#".Remove this unused "character" local variable.(û§é¼
-G
-java:S1444Ó"0Make this "public static atomicLong" field final(ú­³
+c
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(øµÏ
