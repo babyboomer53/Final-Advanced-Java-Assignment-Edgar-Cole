@@ -7,18 +7,14 @@ Oops, a required argument is missing!
 
 Usage: Lesson7Database [--help]   # Displays this command syntax summary
        Lesson7Database <filename> # Process the SQL statements in <filename>
-
 ```
 The only other "argument" that Lesson7Database accepts is the "--help" option. When Lesson7Database is invoked with the "--help" option, the following command syntax summary is displayed:
-
 ```text
-
 Usage: Lesson7Database [--help]   # Displays this command syntax summary
        Lesson7Database <filename> # Process the SQL statements in <filename>
-       
 ```
 A feeble attempt was made to build a modicum of validity checking into the program. Toward that end, Lesson7Database 
-validates both the filenames passed on the commandline and those passed as arguments to the Lesson7Database.setFileName() method.  Filenames provided on the command line or as arguments to the setFileName() method are compared to a regular expression (regex) pattern. Those filenames found to be noncompliant will generate an error. In response to the error, Lesson7Database generates the following:
+validates both the filenames passed on the command line and those passed as arguments to the Lesson7Database.setFileName() method.  Filenames provided on the command line or as arguments to the setFileName() method are compared to a regular expression (regex) pattern. Those filenames found to be noncompliant will generate an error. In response to the error, Lesson7Database generates the following:
 ```text
 "Edgar//Cole" is not a valid file name!
 
@@ -36,7 +32,7 @@ downloaded both the PostgreSQL and the MySQL jar files. Although I settled on My
 
 Another factor in my decision to use MySQL over PostgreSQL was the formers graphical user interface. On the management side, MySQL's Workbench application had a couple more of the features I needed. It certainly seemed easier to find them. This was important since I frequently found myself dropping and creating tables. In particular, MySQL's refresh button enhanced the development cycle.
 
-Another decision I had to make was whether I was going to create the database from the client-side (i.e., the Java program) or from the server-side console. Given the number of times during the development cycle that I had to create and delete the database, this became problematic. Eventually I decided to manage it from the server-side, were a simple button click made it easy.
+Another decision I had to make was whether I was going to create the database from the client-side (i.e., the Java program) or from the server-side console. Given the number of times during the development cycle that I had to create and delete the database, this became problematic. Eventually I decided to manage it from the server-side, where a simple button click made it easy.
 
 In order to accommodate some of the eccentricities of the database I chose, I did make some tweaks to the input file. Regardless, I can't see why the solution I developed wouldn't work with any file containing SQL statements that are compliant. The caveat is that anyone running the program must first create the database. Lesson7Database won't do that.
 

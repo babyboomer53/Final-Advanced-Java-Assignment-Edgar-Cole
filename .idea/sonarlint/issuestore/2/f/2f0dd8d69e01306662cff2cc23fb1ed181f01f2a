@@ -2,19 +2,33 @@
 a
 java:S1301‘"KReplace this "switch" statement by "if" statements to increase readability.(šÍ¤m
 K
-java:S1481b"0Remove this unused "updateCount" local variable.(õ¢°öÿÿÿÿÿ
-g	java:S128’"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
-Ì
-java:S1598"®This file "Lesson7Database.java" should be located in "com\advanced\java\database\com\advanced\java\database" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.database\com\advanced\java\database"(Do not use dots in directory names).(±„¿8ò©ñš‚/
+java:S1141\"5Extract this nested try block into a separate method.(ŠÏçó
+Å
+java:S1598"®This file "Lesson7Database.java" should be located in "com\advanced\java\database\com\advanced\java\database" directory, not in "C:\Users\Champ\IdeaProjects\Java IV\Final-Advanced-Java-Assignment-Edgar-Cole\src\com.advanced.java.database\com\advanced\java\database"(Do not use dots in directory names).(±„¿
+J
+java:S62129"/Declare this local variable with "var" instead.(¡¹…Ãøÿÿÿÿ
+E
+java:S6212:"/Declare this local variable with "var" instead.(òªüˆ
 W
 java:S1126;"AReplace this if-then-else statement by a single return statement.(äÉüæ
+1
+java:S3626]"Remove this redundant jump.(ÉŠ©ƒ
+m
+java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÅõÄòıÿÿÿÿ
+E
+java:S6212\"/Declare this local variable with "var" instead.(ŠÏçó
+J
+java:S6212m"/Declare this local variable with "var" instead.(Ñü¥úÿÿÿÿ
+E
+java:S6212q"/Declare this local variable with "var" instead.(îï¸Â
+E
+java:S6212x"/Declare this local variable with "var" instead.(îï¸Â
 X
 java:S1854‰"<Remove this useless assignment to local variable "argument".(æÍŠÿÿÿÿÿ
 K
-java:S1141\"5Extract this nested try block into a separate method.(ŠÏçó
+java:S6212"/Declare this local variable with "var" instead.(ŠüÛÖüÿÿÿÿ
+g	java:S128’"LEnd this switch case with an unconditional break, return or throw statement.(ÿ¶‹ûÿÿÿÿ
+K
+java:S1481b"0Remove this unused "updateCount" local variable.(õ¢°öÿÿÿÿÿ
 I
 java:S1481‰"-Remove this unused "argument" local variable.(æÍŠÿÿÿÿÿ
-m
-java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÅõÄòıÿÿÿÿ
-1
-java:S3626]"Remove this redundant jump.(ÉŠ©ƒ

@@ -178,7 +178,7 @@ public class DemoDriver {
     public static void main(String[] arguments) throws InterruptedException, IOException, SQLException, XPathExpressionException, SAXException, ParserConfigurationException {
         Scanner keyboardInput = new Scanner(System.in);
         int demo = 0;
-        System.out.print("\nW E L C O M E   TO   T H E   D E M O   D R I V E R !\n");
+        System.out.print("\nW E L C O M E   T O   T H E   D E M O   D R I V E R !\n");
         do {
             System.out.println("\nSELECT A DEMO…\n");
             System.out.println("1) I/O Stream demo\n" +
